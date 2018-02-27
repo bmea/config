@@ -1,11 +1,7 @@
 {
-    "autoload": {
-        "psr-4": {
-            "Configurator\\": "src"
-        }
-    },
     "require": {
         "hassankhan/config": "*",
-        "nategood/commando": "*"
+        "nategood/commando": "*",
+        "mustache/mustache": "*"
     }
 }

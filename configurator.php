@@ -1,18 +1,23 @@
+#!/usr/bin/env php
 <?php
 
 require_once 'vendor/autoload.php';
 
-use Commando\Command;
-use Configurator\Config;
-
-$cmd = new Command();
+# parse arguments
+$cmd = new Commando\Command();
 
 $cmd->option('t')
     ->aka('template')
+    ->required()
     ->describedAs('Process template FILE')
     ->expectsFile();
 
-# merge config from non-option arguments
-$conf = new Config($cmd->getArgumentValues());
+# compile template
+$m = new Mustache_Engine;
+$tpl = $m->loadTemplate(file_get_contents($cmd['template']));
 
-echo json_encode($conf->all()), PHP_EOL;
+# merge config from non-option arguments
+$conf = new Noodlehaus\Config($cmd->getArgumentValues());
+
+# render template
+echo $tpl->render($conf->all());
