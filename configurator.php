@@ -3,7 +3,7 @@
 require_once 'vendor/autoload.php';
 
 use Commando\Command;
-use Bmea\Config;
+use Configurator\Config;
 
 $cmd = new Command();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bmea;
+namespace Configurator;
 
 class Config extends \Noodlehaus\Config
 {

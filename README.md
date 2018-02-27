@@ -1,1 +1,1 @@
-# config
+# configurator

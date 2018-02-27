@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "Bmea\\": "src"
+            "Configurator\\": "src"
         }
     },
     "require": {
