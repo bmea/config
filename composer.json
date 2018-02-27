@@ -1,7 +1,8 @@
 {
     "require": {
         "hassankhan/config": "*",
+        "mustache/mustache": "*",
         "nategood/commando": "*",
-        "mustache/mustache": "*"
+        "symfony/yaml": "*"
     }
 }
