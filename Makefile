@@ -25,7 +25,7 @@ composer.lock: composer.json | composer.phar
 	rm -f composer.lock
 	php composer.phar update
 
-lib/configurator/vendor/autoload.php: | composer.phar composer.lock
+lib/configurator/vendor/autoload.php: composer.lock | composer.phar
 	php composer.phar install
 
 lib: lib/configurator/vendor/autoload.php
