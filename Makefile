@@ -14,7 +14,7 @@ LIB_FILES = $(shell find lib -type f | sed 's/^lib\///')
 # targets
 all: lib
 
-install: all
+install:
 	$(INSTALL_PROGRAM) bin/configurator.php $(DESTDIR)$(bindir)/configurator.php
 	$(foreach f,$(LIB_FILES),$(INSTALL_DATA) lib/"$f" "$(DESTDIR)$(libdir)/$f";)
 
