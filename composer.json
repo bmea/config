@@ -1,6 +1,6 @@
 {
     "autoload": {
-        "psr-0": { "": "lib/" }
+        "psr-0": { "": "lib/configurator" }
     },
     "config": {
         "vendor-dir": "lib/configurator/vendor"
