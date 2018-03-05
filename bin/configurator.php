@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'vendor/autoload.php';
+require_once __DIR__.'/../lib/configurator/vendor/autoload.php';
 
 # parse arguments
 $cmd = new Commando\Command();

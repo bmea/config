@@ -2,6 +2,9 @@
     "autoload": {
         "psr-0": { "": "lib/" }
     },
+    "config": {
+        "vendor-dir": "lib/configurator/vendor"
+    },
     "require": {
         "hassankhan/config": "*",
         "mustache/mustache": "*",
